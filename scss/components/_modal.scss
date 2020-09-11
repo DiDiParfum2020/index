@@ -1,0 +1,42 @@
+.modal {
+    position: fixed;
+    width: 100%;
+    top: 10%;
+    display: none;
+    justify-content: center;
+    &:target {
+        display: flex;
+    }
+    .menu {
+        box-shadow: 5px 5px 10px #888;
+        position: relative;
+        text-align: center;
+        p {
+            font-family: times;
+        }
+        .modal-close {
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 15px;
+        }
+        a {
+            display: block;
+            color: #000;
+        }
+        .modal__mark {
+            padding: 20px 60px;
+            font-size: 1.3rem;
+            font-weight: lighter;
+            background-color: #fff;
+        }
+        .tittle {
+            background-color: gold;
+            text-transform: uppercase;
+            font-size: 2rem;
+            height: 60px;
+            line-height: 60px;
+            border-bottom: 1px solid #000;
+        }
+    }
+}

@@ -1,0 +1,49 @@
+:root {
+    font-size: 12px;
+    @media (min-width: 600px) {
+        font-size: 20px;
+    }
+}
+body {
+    margin-top: 40px;
+    color: #222;
+    background-color: hsl(0deg, 0, 95 );
+    @media (min-width: 600px) {
+        margin-top: 60px;
+    }
+}
+:target {
+    padding-top: 60px;
+    transition: .6s;
+}
+#modal:target {
+    padding-top: 0;
+}
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+h1, h2, h3, h4 {
+    text-transform: uppercase;
+    text-align: center;
+}
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 2rem;
+}
+p {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a {
+    $color: blue;
+    color: $color;
+    &:visited {
+        color: $color;
+    }
+}
