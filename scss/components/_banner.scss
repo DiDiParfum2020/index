@@ -5,6 +5,7 @@
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+  position: relative;
   img {
     width: 100%;
     height:300px;
@@ -13,5 +14,18 @@
       height: 600px;
       max-width: 1000px;
     }
+  }
+  .imgLogo_banner {
+    --size-logo-highVP: 600px;
+    --size-logo-lowVP: 300px;
+    width: var(--size-logo-lowVP);
+    height: var(--size-logo-lowVP);
+    position: absolute;
+    background-color: transparent;
+        @media (min-width: 600px) {
+          width: var(--size-logo-highVP);
+          height: var(--size-logo-highVP);
+          max-width: 1000px;
+        }
   }
 }
