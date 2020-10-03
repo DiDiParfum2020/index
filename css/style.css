@@ -29,7 +29,8 @@ body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   text-decoration: none;
-  list-style: none; }
+  list-style: none;
+  z-index: 100; }
 
 h1, h2, h3, h4 {
   text-transform: uppercase;
@@ -63,6 +64,7 @@ a {
   background-color: #000;
   height: 40px;
   position: fixed;
+  z-index: 101;
   top: 0;
   width: 100%;
   -webkit-box-shadow: 0 0 20px -5px #000;
@@ -116,8 +118,8 @@ a {
         height: 600px;
         max-width: 1000px; } }
   .banner .imgLogo_banner {
-    --size-logo-highVP: 500px;
-    --size-logo-lowVP: 200px;
+    --size-logo-highVP: 600px;
+    --size-logo-lowVP: 300px;
     width: var(--size-logo-lowVP);
     height: var(--size-logo-lowVP);
     position: absolute;
@@ -130,6 +132,7 @@ a {
 
 .modal {
   position: fixed;
+  z-index: 101;
   width: 100%;
   top: 10%;
   display: none;
