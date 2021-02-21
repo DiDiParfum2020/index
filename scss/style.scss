@@ -9,9 +9,10 @@
 
 @import "components/nav-menu";
 @import "components/banner";
-@import "components/modal";
 @import "components/main";
-@import "components/contain-cards";
+// @import "components/contain-cards";
+@import "components/contain-cardsV2";
+@import "components/cardZoom";
 
 /* ----- Modal ----- */
 
@@ -20,4 +21,3 @@
 /*----- Layout -----*/
 
 @import "layout/footer";
-@import "layout/nav-menu";

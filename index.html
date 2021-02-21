@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" href="icon/supermarket.png">
+    <!-- <link rel="icon" href="icon/supermarket.png"> -->
+    <link rel="icon" href="img\logo\Logo2.png">
     <link rel="stylesheet" href="css/style.css">
     <title>DiDiParfum2020</title>
 </head>
-<!-- GetButton.io widget -->
+<body>
+
+    <!-- GetButton.io widget -->
 <script type="text/javascript" class="wpp">
     (function () {
         var options = {
@@ -23,38 +26,38 @@
     })();
 </script>
 <!-- /GetButton.io widget -->
-<body>
-
+    
 <!-- Body -->
     
-    <header class="header-menu">
-        <nav class="nav">
-            <ul class="menu-ul">
-                <li><a href="#modal">Perfumes</a></li>
-                <li><a href="#graphcomment">Comentarios</a></li>
+    <header id="header" class="header">
+        <nav id="nav" class="header__nav">
+            <div class="navBtns">
+                <div id="navOpen" class="navBtns__open">☰</div>
+                <div id="navClose" class="navBtns__close hide">X</div>
+            </div>
+            <ul class="nav__ul">
+                <li><a class="nav__links" href="#banner">Inicio</a></li>
+                <li><a class="nav__links" href="#graphcomment">Comentarios</a></li>
+                <hr>
+                <li><a class="nav__links" href="#woman">Femeninos</a></li>
+                <li><a class="nav__links" href="#men">Masculinos</a></li>
+                <li><a class="nav__links" href="#bi-sex">Unisex</a></li>
+                <li><a class="nav__links" href="#import-woman">Importados F.</a></li>
+                <li><a class="nav__links" href="#import-men">Importados M.</a></li>
             </ul>
         </nav>
+        <form id="searchForm" action="">
+            <input id="searchInput" type="text" autocomplete="off" placeholder="Encuentra tu aroma">
+        </form>
     </header>
+    <div id="searchBarResults" class="searchBarResults"></div>
 
-<!-- Indice-modal -->
-
-    <div id="modal" class="modal">
-        <div class="menu">
-            <p class=" tittle">Perfumes<a href="#" class="modal-close">X</a></p>
-            <p><a class="modal__mark" href="#woman">Femeninos</a></p>
-            <p><a class="modal__mark" href="#men">Masculinos</a></p>
-            <p><a class="modal__mark" href="#bi-sex">Unisex</a></p>
-            <p><a class="modal__mark" href="#import-woman">Importados femeninos</a></p>
-            <p><a class="modal__mark" href="#import-men">Importados masculinos</a></p>
-        </div>
-    </div>
-        
         <!-- Main -->
 
-        <div class="banner">
+        <div id="banner" class="banner">
 
-            <img loading="lazy" class="imgBg_banner" src="img\logo\bannerBG.jpeg" alt="logo">
-            <img loading="lazy" class="imgLogo_banner" src="img\logo\Logo2.png" alt="logo">
+            <img class="imgBg_banner" src="img\logo\bannerBG.jpeg" alt="logo">
+            <img class="imgLogo_banner" src="img\logo\Logo2.png" alt="logo">
 
         </div>
 
@@ -68,20 +71,20 @@
 
 
         <div class="contain-cards">
+            <h2 id="woman">Femeninos</h2> <!-- ------------------ --><!-- ------------------ -->
             <section class="content__articles-cards">
 
-                <h2 id="woman">Femeninos</h2> <!-- ------------------ --><!-- ------------------ -->
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\L'intervieux.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\L'intervieux.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>L'intervieux<br><span>100</span></h1>
+                            <h2>L'intervieux<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Bergamota y pera, nardos, flor de azahar del naranjo y jazmín, sambac, pachulí, vetiver, ambroxan y vainilla</p>
                         </main>
                     </div>
@@ -89,14 +92,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\SWEET GIRL.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\SWEET GIRL.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>SWEET GIRL<br><span>100</span></h1>
+                            <h2>SWEET GIRL<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Floral Dulce, Especiado, Vainilla, Cacao</p>
                         </main>
                     </div>
@@ -104,14 +107,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\SWEET GIRL PRIVÉE.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\SWEET GIRL PRIVÉE.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>SWEET GIRL PRIVÉE<br><span>100</span></h1>
+                            <h2>SWEET GIRL PRIVÉE<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Pachuli, Vainilla y Cuero</p>
                         </main>
                     </div>
@@ -119,14 +122,14 @@
                 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\SWEET GIRL LEGERE.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\SWEET GIRL LEGERE.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>SWEET GIRL LEGERE<br><span>90</span></h1>
+                            <h2>SWEET GIRL LEGERE<br><span> 90</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Mandarina, Limon, Jazmin, sandalo y Canela</p>
                         </main>
                     </div>
@@ -135,14 +138,14 @@
                 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\GOLDEN GIRL.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\GOLDEN GIRL.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>GOLDEN GIRL<br><span>90</span></h1>
+                            <h2>GOLDEN GIRL<br><span> 90</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Frutal, Dulce Especiado, Vainilla, Jazmin</p>
                         </main>
                     </div>
@@ -150,14 +153,14 @@
                 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\GOLDEN GIRL 100ml.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\GOLDEN GIRL 100ml.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>GOLDEN GIRL<br><span>100</span></h1>
+                            <h2>GOLDEN GIRL<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Frutal, Dulce Especiado, Vainilla, Jazmín</p>
                         </main>
                     </div>
@@ -165,14 +168,14 @@
                 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\BELLA.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\BELLA.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>BELLA<br><span>75</span></h1>
+                            <h2>BELLA<br><span> 75</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Dulce Avainillado con Pera y Jazmín</p>
                         </main>
                     </div>
@@ -180,14 +183,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\BELLA LEGERE.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\BELLA LEGERE.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>BELLA LEGERE<br><span>100</span></h1>
+                            <h2>BELLA LEGERE<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Dulce Avainillado Suave con Pera y Jazmín</p>
                         </main>
                     </div>
@@ -195,14 +198,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\BELLA L'ECLAT.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\BELLA L'ECLAT.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>BELLA L'ECLAT<br><span>100</span></h1>
+                            <h2>BELLA L'ECLAT<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Mandarina, Flores blancas, Jazmín, Sándalo y Vainilla</p>
                         </main>
                     </div>
@@ -210,14 +213,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\LIFE IS BELLA ROSE.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\LIFE IS BELLA ROSE.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>LIFE IS BELLA ROSE<br><span>100</span></h1>
+                            <h2>LIFE IS BELLA ROSE<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Peonia, rosa, frutos rojos, sándalo</p>
                         </main>
                     </div>
@@ -225,14 +228,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\YD'LICIOUS.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\YD'LICIOUS.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>YD'LICIOUS<br><span>100</span></h1>
+                            <h2>YD'LICIOUS<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Frutal Fresco, Manzana Verde, Sándalo</p>
                         </main>
                     </div>
@@ -240,14 +243,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\YD'LICIOUS FRESH PINK.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\YD'LICIOUS FRESH PINK.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>YD'LICIOUS FRESH PINK<br><span>100</span></h1>
+                            <h2>YD'LICIOUS FRESH PINK<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Toronja, Rosa, Manzana y Notas amaderadas</p>
                         </main>
                     </div>
@@ -255,14 +258,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\NADINE L'ELIXIR.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\NADINE L'ELIXIR.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>NADINE L'ELIXIR<br><span>100</span></h1>
+                            <h2>NADINE L'ELIXIR<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Frutos Rojos, Limón, Almizcle, Jazmín</p>
                         </main>
                     </div>
@@ -270,14 +273,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\NADINE DELICIEUX.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\NADINE DELICIEUX.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>NADINE DELICIEUX<br><span>90</span></h1>
+                            <h2>NADINE DELICIEUX<br><span> 90</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Dulce Frutal, Jazmín, Vainilla, Caramelo</p>
                         </main>
                     </div>
@@ -285,14 +288,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\MOONLIGHT.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\MOONLIGHT.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>MOONLIGHT<br><span>100</span></h1>
+                            <h2>MOONLIGHT<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Lima, Naranja, Caramelo, Jazmín, Sándalo, Vainilla</p>
                         </main>
                     </div>
@@ -300,14 +303,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\NADINE.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\NADINE.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>NADINE<br><span>100</span></h1>
+                            <h2>NADINE<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Cítrico Frutal, Dulce, Flor de Manzano</p>
                         </main>
                     </div>
@@ -315,14 +318,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\NADINE L'EAU.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\NADINE L'EAU.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>NADINE L'EAU<br><span>100</span></h1>
+                            <h2>NADINE L'EAU<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Cítrico Frutal, Dulce, Flor de Manzano</p>
                         </main>
                     </div>
@@ -330,14 +333,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\ÉXTASIS.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\ÉXTASIS.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>ÉXTASIS<br><span>65</span></h1>
+                            <h2>ÉXTASIS<br><span> 65</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Floral Frutal, Notas Amaderadas, Vainilla</p>
                         </main>
                     </div>
@@ -345,14 +348,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\YD BLACK L'ELIXIR.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\YD BLACK L'ELIXIR.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>YD BLACK L'ELIXIR<br><span>100</span></h1>
+                            <h2>YD BLACK L'ELIXIR<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Frutal Dulce, Arándanos, Pimienta Roja</p>
                         </main>
                     </div>
@@ -360,14 +363,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\HAI.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\HAI.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>HAI<br><span>100</span></h1>
+                            <h2>HAI<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Dulce Frutal, Notas Amaderadas, Vainilla</p>
                         </main>
                     </div>
@@ -375,14 +378,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\SUTIL.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\SUTIL.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>SUTIL<br><span>75</span></h1>
+                            <h2>SUTIL<br><span> 75</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Maracuyá, Durazno, Naranja, Jazmín</p>
                         </main>
                     </div>
@@ -390,14 +393,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\YVES D'ORGEVAL LIGHT BLUE.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\YVES D'ORGEVAL LIGHT BLUE.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>YVES D'ORGEVAL LIGHT BLUE<br><span>100</span></h1>
+                            <h2>YVES D'ORGEVAL LIGHT BLUE<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Limón, Manzana, Cedro, Bambú, Almizcle</p>
                         </main>
                     </div>
@@ -405,14 +408,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\YVES D'ORGEVAL CLASSIC.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\YVES D'ORGEVAL CLASSIC.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>YVES D'ORGEVAL CLASSIC<br><span>100</span></h1>
+                            <h2>YVES D'ORGEVAL CLASSIC<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Notas Frutales, Floral, Cilantro, Vainilla</p>
                         </main>
                     </div>
@@ -420,14 +423,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\LUMIERE.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\LUMIERE.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>LUMIERE<br><span>100</span></h1>
+                            <h2>LUMIERE<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Notas Frutales, Jazmín, Fresia, Lirio, Vainilla</p>
                         </main>
                     </div>
@@ -435,14 +438,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\LUMIERE BLACK.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\LUMIERE BLACK.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>LUMIERE BLACK<br><span>100</span></h1>
+                            <h2>LUMIERE BLACK<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Dulce Frutal con Vainilla, Pera, Jazmín</p>
                         </main>
                     </div>
@@ -450,14 +453,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\SPELL'S NIGHT.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\SPELL'S NIGHT.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>SPELL'S NIGHT<br><span>100</span></h1>
+                            <h2>SPELL'S NIGHT<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Floral, Melón, Maderas Exóticas, Ámbar</p>
                         </main>
                     </div>
@@ -465,14 +468,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\SPELL'S NIGHT BLUE DROP.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\SPELL'S NIGHT BLUE DROP.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>SPELL'S NIGHT BLUE DROP<br><span>80</span></h1>
+                            <h2>SPELL'S NIGHT BLUE DROP<br><span> 80</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Citricos, Manzana Verde, Jazmin, Ambar</p>
                         </main>
                     </div>
@@ -480,14 +483,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\ORIXA.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\ORIXA.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>ORIXA<br><span>100</span></h1>
+                            <h2>ORIXA<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Floral, Melón, Maderas Exóticas, Ambar</p>
                         </main>
                     </div>
@@ -495,14 +498,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\HVNGARI.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\HVNGARI.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>HVNGARI<br><span>100</span></h1>
+                            <h2>HVNGARI<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Notas Florales con Frambuesa</p>
                         </main>
                     </div>
@@ -510,14 +513,14 @@
                 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\MISS MILLIONAIRE.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\MISS MILLIONAIRE.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>MISS MILLIONAIRE<br><span>100</span></h1>
+                            <h2>MISS MILLIONAIRE<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Floral Dulce con Miel, Jazmín y Neroli</p>
                         </main>
                     </div>
@@ -525,14 +528,14 @@
                 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\MISS MILLIONAIRE EAU MY GOLD.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\MISS MILLIONAIRE EAU MY GOLD.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>MISS MILLIONAIRE EAU MY GOLD<br><span>85</span></h1>
+                            <h2>MISS MILLIONAIRE EAU MY GOLD<br><span> 85</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Frutal Dulce, Flor de Azahar, Violeta, Sándalo</p>
                         </main>
                     </div>
@@ -540,14 +543,14 @@
                 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\MISS MILLIONAIRE PRIVÉ.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\MISS MILLIONAIRE PRIVÉ.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>MISS MILLIONAIRE PRIVÉ<br><span>90</span></h1>
+                            <h2>MISS MILLIONAIRE PRIVÉ<br><span> 90</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Floral Dulce, Miel, Notas Madera, Cacao</p>
                         </main>
                     </div>
@@ -555,14 +558,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\PLAYING.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\PLAYING.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>PLAYING<br><span>80</span></h1>
+                            <h2>PLAYING<br><span> 80</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Naranjo, bergamota, durazno, orquidea y almizcle</p>
                         </main>
                     </div>
@@ -570,14 +573,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\YD FLEUR ELIXIR.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\YD FLEUR ELIXIR.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>YD FLEUR ELIXIR<br><span>100</span></h1>
+                            <h2>YD FLEUR ELIXIR<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Mandarina, Frambuesa, Praliné y Vainilla</p>
                         </main>
                     </div>
@@ -585,14 +588,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\YD FLEUR.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\YD FLEUR.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>YD FLEUR<br><span>50</span></h1>
+                            <h2>YD FLEUR<br><span> 50</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Mandarina, Frambuesa, Praliné y Vainilla</p>
                         </main>
                     </div>
@@ -600,14 +603,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\YD FLEUR TG.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\YD FLEUR TG.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>YD FLEUR TG<br><span>50</span></h1>
+                            <h2>YD FLEUR TG<br><span> 50</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Floral Frutado, Mandarina, Jazmín, Vainilla</p>
                         </main>
                     </div>
@@ -615,14 +618,14 @@
                 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\AD.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\AD.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>AD<br><span>100</span></h1>
+                            <h2>AD<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Dulce, Vainilla, Azucena, Orquídea, Mandarina</p>
                         </main>
                     </div>
@@ -630,14 +633,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\AD LE SECRET.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\AD LE SECRET.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>AD LE SECRET<br><span>60</span></h1>
+                            <h2>AD LE SECRET<br><span> 60</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Frutal Fresco, Amaderada, Arándanos, Limón</p>
                         </main>
                     </div>
@@ -645,14 +648,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\AD LE SECRET ELIXIR.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\AD LE SECRET ELIXIR.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>AD LE SECRET ELIXIR<br><span>100</span></h1>
+                            <h2>AD LE SECRET ELIXIR<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Neroli, Flor de Naranjo, Almizcle, Cedro</p>
                         </main>
                     </div>
@@ -660,14 +663,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\JENKO LOVELY GAME.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\JENKO LOVELY GAME.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>JENKO LOVELY GAME<br><span>75</span></h1>
+                            <h2>JENKO LOVELY GAME<br><span> 75</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Frutal, Mandarina, Granada, Fresia, Sándalo</p>
                         </main>
                     </div>
@@ -675,14 +678,14 @@
                 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\JENKO LOVELY GAME ELIXIR.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\JENKO LOVELY GAME ELIXIR.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>JENKO LOVELY GAME ELIXIR<br><span>75</span></h1>
+                            <h2>JENKO LOVELY GAME ELIXIR<br><span> 75</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Dulce Frutal, Nardo, Ron, Mandarina, Vainilla</p>
                         </main>
                     </div>
@@ -690,14 +693,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\YD&DG.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\YD&DG.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>YD&DG<br><span>75</span></h1>
+                            <h2>YD&DG<br><span> 75</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Dulce Atalcado, Mandarina, Vainilla, Sándalo</p>
                         </main>
                     </div>
@@ -705,14 +708,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\GH SUBLIME.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\GH SUBLIME.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>GH SUBLIME<br><span>75</span></h1>
+                            <h2>GH SUBLIME<br><span> 75</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Floral Dulce, Notas Frutales, Cuero</p>
                         </main>
                     </div>
@@ -720,14 +723,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\GH L'EAU.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\GH L'EAU.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>GH L'EAU<br><span>50</span></h1>
+                            <h2>GH L'EAU<br><span> 50</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Flor de Azahar, Naranja, Jazmín, Sándalo</p>
                         </main>
                     </div>
@@ -735,14 +738,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\YD ANGE.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\YD ANGE.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>YD ANGE<br><span>100</span></h1>
+                            <h2>YD ANGE<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Dulce, Vainilla, Miel, Coco, Durazno, Caramelo</p>
                         </main>
                     </div>
@@ -750,14 +753,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\SPIRIT OF AFRICA.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\SPIRIT OF AFRICA.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>SPIRIT OF AFRICA<br><span>100</span></h1>
+                            <h2>SPIRIT OF AFRICA<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Frutal Fresco con Notas Florales y Té</p>
                         </main>
                     </div>
@@ -765,14 +768,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\D'ORGEVAL CODE.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\D'ORGEVAL CODE.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>D'ORGEVAL CODE<br><span>110</span></h1>
+                            <h2>D'ORGEVAL CODE<br><span> 110</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Cítrico, Floral, Dulce, Miel, Vainilla</p>
                         </main>
                     </div>
@@ -780,14 +783,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\NIGHT'S TREASURE.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\NIGHT'S TREASURE.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>NIGHT'S TREASURE<br><span>100</span></h1>
+                            <h2>NIGHT'S TREASURE<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Bergamota, Maracuyá, Pachuli, Vainilla y Café</p>
                         </main>
                     </div>
@@ -795,14 +798,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\YD IRRESISTIBLE.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\YD IRRESISTIBLE.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>YD IRRESISTIBLE<br><span>80</span></h1>
+                            <h2>YD IRRESISTIBLE<br><span> 80</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Floral Especiado, Fresco</p>
                         </main>
                     </div>
@@ -810,14 +813,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\YD IRRESISTIBLE SENSUAL.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\YD IRRESISTIBLE SENSUAL.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>YD IRRESISTIBLE SENSUAL<br><span>80</span></h1>
+                            <h2>YD IRRESISTIBLE SENSUAL<br><span> 80</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Floral Especiado, Vainilla, Patchouli</p>
                         </main>
                     </div>
@@ -825,14 +828,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\BAISER D'AMOUR.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\BAISER D'AMOUR.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>BAISER D'AMOUR<br><span>100</span></h1>
+                            <h2>BAISER D'AMOUR<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Cítrico, Floral, Vainilla, Ambar, Cedro, Almizcle</p>
                         </main>
                     </div>
@@ -840,14 +843,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\CHARM IN BLACK VINTAGE.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\CHARM IN BLACK VINTAGE.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>CHARM IN BLACK VINTAGE<br><span>110</span></h1>
+                            <h2>CHARM IN BLACK VINTAGE<br><span> 110</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Frutal Suave, Floral, Atalcado, Vainilla</p>
                         </main>
                     </div>
@@ -855,14 +858,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\CHARM IN WHITE VINTAGE.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\CHARM IN WHITE VINTAGE.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>CHARM IN WHITE VINTAGE<br><span>110</span></h1>
+                            <h2>CHARM IN WHITE VINTAGE<br><span> 110</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Grosella negra, Jazmín, Rosa, Almizcle y Ámbar</p>
                         </main>
                     </div>
@@ -870,14 +873,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\CHARM IN PINK VINTAGE.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\CHARM IN PINK VINTAGE.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>CHARM IN PINK VINTAGE<br><span>110</span></h1>
+                            <h2>CHARM IN PINK VINTAGE<br><span> 110</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Frambuesa, Neroli, Vainilla y Almizcle</p>
                         </main>
                     </div>
@@ -885,14 +888,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\CHARM IN BLACK.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\CHARM IN BLACK.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>CHARM IN BLACK<br><span>110</span></h1>
+                            <h2>CHARM IN BLACK<br><span> 110</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Frutos Rojos, Jazmín, Ámbar, Caramelo, Sándalo y Vainilla</p>
                         </main>
                     </div>
@@ -900,14 +903,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\GH.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\GH.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>GH<br><span>50</span></h1>
+                            <h2>GH<br><span> 50</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Frutal Fresco, Bergamota, Pomelo, Rosas, Sándalo</p>
                         </main>
                     </div>
@@ -915,14 +918,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\YD12.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\YD12.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>YD12<br><span>80</span></h1>
+                            <h2>YD12<br><span> 80</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Notas de Flores Blancas, Mandarina, Almizcle</p>
                         </main>
                     </div>
@@ -930,14 +933,14 @@
                 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\YD12 VIP.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\YD12 VIP.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>YD12 VIP<br><span>100</span></h1>
+                            <h2>YD12 VIP<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Floral, Afrutado Dulce, Almizcle</p>
                         </main>
                     </div>
@@ -945,14 +948,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\YD12 SEXY.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\YD12 SEXY.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>YD12 SEXY<br><span>100</span></h1>
+                            <h2>YD12 SEXY<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Dulce Almizclado Vainilla, Especiado Suave</p>
                         </main>
                     </div>
@@ -960,14 +963,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\YD12 VIP ROSE.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\YD12 VIP ROSE.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>YD12 VIP ROSE<br><span>100</span></h1>
+                            <h2>YD12 VIP ROSE<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Frutal con Notas Amaderadas, Flor Durazno</p>
                         </main>
                     </div>
@@ -975,14 +978,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\YD12 VIP Night Club.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\YD12 VIP Night Club.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>YD12 VIP Night Club<br><span>80</span></h1>
+                            <h2>YD12 VIP Night Club<br><span> 80</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Floral, Afrutado Fresco, Almizcle Blanco</p>
                         </main>
                     </div>
@@ -990,14 +993,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\MIU MIU.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\MIU MIU.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>MIU MIU<br><span>100</span></h1>
+                            <h2>MIU MIU<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Frutal Dulce con Bergamota, Nardo, Sándalo</p>
                         </main>
                     </div>
@@ -1005,14 +1008,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\MADEMOISELLE MIU.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\MADEMOISELLE MIU.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>MADEMOISELLE MIU<br><span>60</span></h1>
+                            <h2>MADEMOISELLE MIU<br><span> 60</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Rosa Silvestre, Pimienta Roja, Frambuesa</p>
                         </main>
                     </div>
@@ -1020,14 +1023,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\ATHENEA.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\ATHENEA.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>ATHENEA<br><span>55</span></h1>
+                            <h2>ATHENEA<br><span> 55</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Frutal, Floral, Dulce Especiado, Vainilla</p>
                         </main>
                     </div>
@@ -1035,34 +1038,34 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\femeninos\GODDESS ATHENEA INTENSE.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\femeninos\GODDESS ATHENEA INTENSE.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>GODDESS ATHENEA INTENSE<br><span>50</span></h1>
+                            <h2>GODDESS ATHENEA INTENSE<br><span> 50</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Pimienta blanca, Vainilla y Ambar</p>
                         </main>
                     </div>
                 </article>
                 
             </section>
+            <h2 id="men">Masculinos</h2> <!-- ------------------ --><!-- ------------------ -->
             <section class="content__articles-cards">
 
-                <h2 id="men">Masculinos</h2> <!-- ------------------ --><!-- ------------------ -->
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\masculinos\GOOD BOY.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\masculinos\GOOD BOY.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>GOOD BOY<br><span>100</span></h1>
+                            <h2>GOOD BOY<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Cacao, Ámbar, Salvia, Pimienta Negra Y Blanca, Bergamota</p>
                         </main>
                     </div>
@@ -1070,14 +1073,14 @@
                 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\masculinos\WILDEST.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\masculinos\WILDEST.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>WILDEST<br><span>100</span></h1>
+                            <h2>WILDEST<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Lavanda, Pimienta Rosa, Vetiver, Pachulí, Cedro</p>
                         </main>
                     </div>
@@ -1085,14 +1088,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\masculinos\BLACK YD L'ELIXIR.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\masculinos\BLACK YD L'ELIXIR.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>BLACK YD L'ELIXIR<br><span>100</span></h1>
+                            <h2>BLACK YD L'ELIXIR<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Cítrico Ambarado, Fresco, Patchouli, Lavanda</p>
                         </main>
                     </div>
@@ -1100,14 +1103,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\masculinos\BLACK YD APHRODISIAQUE.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\masculinos\BLACK YD APHRODISIAQUE.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>BLACK YD APHRODISIAQUE<br><span>100</span></h1>
+                            <h2>BLACK YD APHRODISIAQUE<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Dulce Amielado, Canela, Almendra, Cuero Azafrán</p>
                         </main>
                     </div>
@@ -1115,14 +1118,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\masculinos\BLACK YD.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\masculinos\BLACK YD.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>BLACK YD<br><span>100</span></h1>
+                            <h2>BLACK YD<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Dulce, Especiado Suave, Limón, Patchouli, Cardamomo</p>
                         </main>
                     </div>
@@ -1130,14 +1133,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\masculinos\XAVIER ROUGE.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\masculinos\XAVIER ROUGE.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>XAVIER ROUGE<br><span>100</span></h1>
+                            <h2>XAVIER ROUGE<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Naranja china, Cedro, Sándalo y Almizcle blanco</p>
                         </main>
                     </div>
@@ -1145,14 +1148,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\masculinos\YD12 VIP BLACK MEN.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\masculinos\YD12 VIP BLACK MEN.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>YD12 VIP BLACK MEN<br><span>110</span></h1>
+                            <h2>YD12 VIP BLACK MEN<br><span> 110</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Absenta, Anís, Lavanda, Almizcle y Vainilla negra</p>
                         </main>
                     </div>
@@ -1160,14 +1163,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\masculinos\YD12 VIP MEN.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\masculinos\YD12 VIP MEN.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>YD12 VIP MEN<br><span>110</span></h1>
+                            <h2>YD12 VIP MEN<br><span> 110</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Dulce Frutal, Cítrico, Notas Amaderadas, Pimienta</p>
                         </main>
                     </div>
@@ -1175,14 +1178,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\masculinos\HORSE BLACK.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\masculinos\HORSE BLACK.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>HORSE BLACK<br><span>75</span></h1>
+                            <h2>HORSE BLACK<br><span> 75</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Frutal Suave, Especiado, Patchouli</p>
                         </main>
                     </div>
@@ -1190,14 +1193,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\masculinos\HORSE RED INTENSE.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\masculinos\HORSE RED INTENSE.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>HORSE RED INTENSE<br><span>75</span></h1>
+                            <h2>HORSE RED INTENSE<br><span> 75</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Especiado Fresco, Notas Frutales Cítricas, Café</p>
                         </main>
                     </div>
@@ -1205,14 +1208,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\masculinos\HORSE SUPREME OUD.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\masculinos\HORSE SUPREME OUD.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>HORSE SUPREME OUD<br><span>75</span></h1>
+                            <h2>HORSE SUPREME OUD<br><span> 75</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Especiado Dulce, Madera de Oud, Canela, Vetiver</p>
                         </main>
                     </div>
@@ -1220,14 +1223,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\masculinos\HORSE RED.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\masculinos\HORSE RED.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>HORSE RED<br><span>90</span></h1>
+                            <h2>HORSE RED<br><span> 90</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Cítrico Frutal, Notas Amaderadas, Azafrán, Café</p>
                         </main>
                     </div>
@@ -1235,14 +1238,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\masculinos\HORSE.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\masculinos\HORSE.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>HORSE<br><span>90</span></h1>
+                            <h2>HORSE<br><span> 90</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Pino, Amaderado, Tabaco, Cuero, Almizcle</p>
                         </main>
                     </div>
@@ -1250,14 +1253,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\masculinos\HORSE BLUE.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\masculinos\HORSE BLUE.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>HORSE BLUE<br><span>90</span></h1>
+                            <h2>HORSE BLUE<br><span> 90</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Frutal Fresco, Acuático, Notas Amaderadas</p>
                         </main>
                     </div>
@@ -1265,14 +1268,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\masculinos\G. MILLIONAIRE GOLD.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\masculinos\G. MILLIONAIRE GOLD.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>G. MILLIONAIRE GOLD<br><span>100</span></h1>
+                            <h2>G. MILLIONAIRE GOLD<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Frutal Especiado, Canela, Cuero, Mandarina</p>
                         </main>
                     </div>
@@ -1280,14 +1283,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\masculinos\MILLIONAIRE INTENSE.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\masculinos\MILLIONAIRE INTENSE.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>MILLIONAIRE INTENSE<br><span>100</span></h1>
+                            <h2>MILLIONAIRE INTENSE<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Frutal Especiado, Canela, Cuero, Pimienta, Sándalo</p>
                         </main>
                     </div>
@@ -1295,14 +1298,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\masculinos\MILLIONAIRE GENTLEMAN PRIVÉ.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\masculinos\MILLIONAIRE GENTLEMAN PRIVÉ.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>MILLIONAIRE GENTLEMAN PRIVÉ<br><span>100</span></h1>
+                            <h2>MILLIONAIRE GENTLEMAN PRIVÉ<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Balsámico, Atabacado, Canela, Mandarina, Patchouli</p>
                         </main>
                     </div>
@@ -1310,14 +1313,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\masculinos\MILLIONAIRE LUCKIEST.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\masculinos\MILLIONAIRE LUCKIEST.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>MILLIONAIRE LUCKIEST<br><span>100</span></h1>
+                            <h2>MILLIONAIRE LUCKIEST<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Ciruela, Toronja, Bergamota, Avellana, Cedro, Madera de Cachemira, Jazmín, Miel, Pachulí, Musgo de roble, Vetiver,
                             Amerwood</p>
                         </main>
@@ -1326,14 +1329,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\masculinos\PURE YD.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\masculinos\PURE YD.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>PURE YD<br><span>100</span></h1>
+                            <h2>PURE YD<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Jengibre, Bergamota, Canela, Pachuli y Cedro</p>
                         </main>
                     </div>
@@ -1341,14 +1344,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\masculinos\YD PURE NIGHT.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\masculinos\YD PURE NIGHT.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>YD PURE NIGHT<br><span>100</span></h1>
+                            <h2>YD PURE NIGHT<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Jengibre, Canela, Cacao, Ginseng, Vainilla</p>
                         </main>
                     </div>
@@ -1356,14 +1359,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\masculinos\D'ORGEVAL CHROME LEGEND.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\masculinos\D'ORGEVAL CHROME LEGEND.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>D'ORGEVAL CHROME LEGEND<br><span>80</span></h1>
+                            <h2>D'ORGEVAL CHROME LEGEND<br><span> 80</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Frutal Fresco, Almizele, Vetiber, Notas de Te</p>
                         </main>
                     </div>
@@ -1371,14 +1374,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\masculinos\HYDO JUST DIFFERENT.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\masculinos\HYDO JUST DIFFERENT.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>HYDO JUST DIFFERENT<br><span>100</span></h1>
+                            <h2>HYDO JUST DIFFERENT<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Frutal Fresco, Manzana Verde, Menta, Cachemira</p>
                         </main>
                     </div>
@@ -1386,14 +1389,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\masculinos\HYDO RED.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\masculinos\HYDO RED.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>HYDO RED<br><span>100</span></h1>
+                            <h2>HYDO RED<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Frutal Fresco, Notas Dulces, Pimienta Rosa, Cedro</p>
                         </main>
                     </div>
@@ -1401,14 +1404,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\masculinos\ACQUA DI Y'DÒ.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\masculinos\ACQUA DI Y'DÒ.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>ACQUA DI Y'DÒ<br><span>100</span></h1>
+                            <h2>ACQUA DI Y'DÒ<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Citrico Fresco, Notas Marinas, Especiado</p>
                         </main>
                     </div>
@@ -1416,14 +1419,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\masculinos\ACQUA DI YDO PROFUMO.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\masculinos\ACQUA DI YDO PROFUMO.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>ACQUA DI YDO PROFUMO<br><span>100</span></h1>
+                            <h2>ACQUA DI YDO PROFUMO<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Cítrico Fresco, Incienso, Especiado</p>
                         </main>
                     </div>
@@ -1431,14 +1434,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\masculinos\GH PRIVÉ.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\masculinos\GH PRIVÉ.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>GH PRIVÉ<br><span>100</span></h1>
+                            <h2>GH PRIVÉ<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Aromatico de Cuero, Whisky, Lavanda, Pomelo</p>
                         </main>
                     </div>
@@ -1446,14 +1449,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\masculinos\ORIXA POUR HOMME.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\masculinos\ORIXA POUR HOMME.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>ORIXA POUR HOMME<br><span>100</span></h1>
+                            <h2>ORIXA POUR HOMME<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Fresco Especiado, Pomelo, Bergamota, Romero, Vetiver</p>
                         </main>
                     </div>
@@ -1461,14 +1464,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\masculinos\YD ANGE short.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\masculinos\YD ANGE short.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>YD ANGE<br><span>60</span></h1>
+                            <h2>YD ANGE<br><span> 60</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Dulce, Especiado Suave, Caramelo, Vainilla</p>
                         </main>
                     </div>
@@ -1476,14 +1479,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\masculinos\YD ANGE long.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\masculinos\YD ANGE long.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>YD ANGE<br><span>100</span></h1>
+                            <h2>YD ANGE<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Dulce, Especiado Suave, Caramelo, Vainilla</p>
                         </main>
                     </div>
@@ -1491,14 +1494,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\masculinos\CELSIUS.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\masculinos\CELSIUS.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>CELSIUS<br><span>100</span></h1>
+                            <h2>CELSIUS<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Fresco Cítrico, Notas Amaderadas, Especiado</p>
                         </main>
                     </div>
@@ -1506,14 +1509,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\masculinos\SPIRIT OF AFRICA MEN.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\masculinos\SPIRIT OF AFRICA MEN.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>SPIRIT OF AFRICA MEN<br><span>100</span></h1>
+                            <h2>SPIRIT OF AFRICA MEN<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Amaderado, Mandarina, Cachemira, Pimienta Rosa</p>
                         </main>
                     </div>
@@ -1521,14 +1524,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\masculinos\YD12 MEN.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\masculinos\YD12 MEN.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>YD12 MEN<br><span>100</span></h1>
+                            <h2>YD12 MEN<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Fresco Cítrico, Especiado, Notas Amaderadas</p>
                         </main>
                     </div>
@@ -1536,14 +1539,14 @@
                 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\masculinos\YD12 SEXY MEN.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\masculinos\YD12 SEXY MEN.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>YD12 SEXY MEN<br><span>100</span></h1>
+                            <h2>YD12 SEXY MEN<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Dulce Avainillado, Amaderado, Notas de Pimienta</p>
                         </main>
                     </div>
@@ -1551,14 +1554,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\masculinos\JENKO.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\masculinos\JENKO.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>JENKO<br><span>100</span></h1>
+                            <h2>JENKO<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Marino, Notas de Caoba, Especiado, Bálsamo</p>
                         </main>
                     </div>
@@ -1566,14 +1569,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\masculinos\GH MEN.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\masculinos\GH MEN.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>GH MEN<br><span>100</span></h1>
+                            <h2>GH MEN<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Amaderado, Notas Cítricas, Cuero y Vainilla</p>
                         </main>
                     </div>
@@ -1581,14 +1584,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\masculinos\BLACK LABEL.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\masculinos\BLACK LABEL.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>BLACK LABEL<br><span>80</span></h1>
+                            <h2>BLACK LABEL<br><span> 80</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Bergamota, Mandarina, Limón, Lima, Coriandro, Petitgrain</p>
                         </main>
                     </div>
@@ -1596,14 +1599,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\masculinos\GH CLASSIC.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\masculinos\GH CLASSIC.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>GH CLASSIC<br><span>100</span></h1>
+                            <h2>GH CLASSIC<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Atabacado, Clavo de Olor, Limón, Especiado</p>
                         </main>
                     </div>
@@ -1611,14 +1614,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\masculinos\YD IN TENSE.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\masculinos\YD IN TENSE.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>YD IN TENSE<br><span>60</span></h1>
+                            <h2>YD IN TENSE<br><span> 60</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Especiado Dulce, Café, Pimienta Rosa, Patchouli</p>
                         </main>
                     </div>
@@ -1626,14 +1629,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\masculinos\GRAND VIC TORIOUS.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\masculinos\GRAND VIC TORIOUS.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>GRAND VIC TORIOUS<br><span>100</span></h1>
+                            <h2>GRAND VIC TORIOUS<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Cítrico Dulce, Notas Marinas, Canela, Especiado</p>
                         </main>
                     </div>
@@ -1641,14 +1644,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\masculinos\VICTORIOUS.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\masculinos\VICTORIOUS.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>VICTORIOUS<br><span>100</span></h1>
+                            <h2>VICTORIOUS<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Cítrico Fresco, Notas Marinas, Madera, Pimienta Rosa</p>
                         </main>
                     </div>
@@ -1656,14 +1659,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\masculinos\VICTORIOUS AQUA.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\masculinos\VICTORIOUS AQUA.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>VICTORIOUS AQUA<br><span>100</span></h1>
+                            <h2>VICTORIOUS AQUA<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Cítrico Fresco, Notas Marinas, de Fondo Amaderado</p>
                         </main>
                     </div>
@@ -1671,14 +1674,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\masculinos\VICTORIOUS INTENSE.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\masculinos\VICTORIOUS INTENSE.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>VICTORIOUS INTENSE<br><span>100</span></h1>
+                            <h2>VICTORIOUS INTENSE<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>flor de azahar, pimienta negra, maderas, acorde de malta, ámbar negro salado y ámbar gris</p>
                         </main>
                     </div>
@@ -1686,21 +1689,21 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\masculinos\PIPE DREAM.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\masculinos\PIPE DREAM.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>PIPE DREAM<br><span>35</span></h1>
+                            <h2>PIPE DREAM<br><span> 35</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Dulce Atabacado, Especiado</p>
                         </main>
                         <header style="margin-top: 10px;" class="aside__header">
-                            <h1>PIPE DREAM OUD<br><span>35</span></h1>
+                            <h2>PIPE DREAM OUD<br><span> 35</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Dulce Amaderado, Especiado, Madera de Oud</p>
                         </main>
                     </div>
@@ -1708,14 +1711,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\masculinos\D'ORGEVAL CODE MEN.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\masculinos\D'ORGEVAL CODE MEN.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>D'ORGEVAL CODE MEN<br><span>100</span></h1>
+                            <h2>D'ORGEVAL CODE MEN<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Dulce Atabacado, Notas Frutales Suaves, Cuero</p>
                         </main>
                     </div>
@@ -1723,20 +1726,20 @@
 
 
             </section>
+            <h2 id="bi-sex">Unisex</h2> <!-- ------------------ --><!-- ------------------ -->
             <section class="content__articles-cards">
 
-                <h2 id="bi-sex">Unisex</h2> <!-- ------------------ --><!-- ------------------ -->
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\unisex\YD ONE.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\unisex\YD ONE.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>YD ONE<br><span>100</span></h1>
+                            <h2>YD ONE<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Cítrico Fresco Amaderado, Notas Verdes, Jazmín</p>
                         </main>
                     </div>
@@ -1744,14 +1747,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\unisex\ORCHIDÉE NOIR.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\unisex\ORCHIDÉE NOIR.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>ORCHIDÉE NOIR<br><span>100</span></h1>
+                            <h2>ORCHIDÉE NOIR<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Jazmín, Bergamota, Mandarina, Pachuli, incienso y Vainilla</p>
                         </main>
                     </div>
@@ -1759,14 +1762,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\unisex\SHAPIRO.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\unisex\SHAPIRO.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>SHAPIRO<br><span>100</span></h1>
+                            <h2>SHAPIRO<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Bergamota, Gamuza, Jazmín, Madera, Abedul y Vainilla</p>
                         </main>
                     </div>
@@ -1774,14 +1777,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\unisex\COSTA AZUL.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\unisex\COSTA AZUL.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>COSTA AZUL<br><span>100</span></h1>
+                            <h2>COSTA AZUL<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Lavanda, Limón, Mandarina, Incienso, Vainilla y Roble</p>
                         </main>
                     </div>
@@ -1789,14 +1792,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\unisex\OUD GOOD.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\unisex\OUD GOOD.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>OUD GOOD<br><span>100</span></h1>
+                            <h2>OUD GOOD<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Madera, Cardamomo, Sándalo, Vainilla y Ámbar</p>
                         </main>
                     </div>
@@ -1804,33 +1807,33 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\replicas\unisex\NEROLI PORTOBELLO.webp" alt="imagen">
+                        <img src="img\perfumes\replicas\unisex\NEROLI PORTOBELLO.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>NEROLI PORTOBELLO<br><span>100</span></h1>
+                            <h2>NEROLI PORTOBELLO<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Bergamota, Lavanda, Romero, Jazmín, Neroli, Ámbar y Almizcle</p>
                         </main>
                     </div>
                 </article>
             </section>
+            <h2 id="import-woman">Importados femeninos</h2> <!-- ------------------ --><!-- ------------------ -->
             <section class="content__articles-cards">
 
-                <h2 id="import-woman">Importados femeninos</h2> <!-- ------------------ --><!-- ------------------ -->
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\importados\femeninos\PRECIEUX RÊVE.webp" alt="imagen">
+                        <img src="img\perfumes\importados\femeninos\PRECIEUX RÊVE.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>PRECIEUX RÊVE<br><span>100</span></h1>
+                            <h2>PRECIEUX RÊVE<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Principal: Mandarina, Pera y Manzana</p>
                             <p>Corazón: Jazmín, Mango y Rosa</p>
                             <p>Fondo: Ámbar, Almizcle y Sándalo</p>
@@ -1840,14 +1843,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\importados\femeninos\CLOSE TO ME.webp" alt="imagen">
+                        <img src="img\perfumes\importados\femeninos\CLOSE TO ME.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>CLOSE TO ME<br><span>100</span></h1>
+                            <h2>CLOSE TO ME<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Principal: Pomelo, Manzana y Té Verde</p>
                             <p>Corazón: Ananá, Frutos Rojos y Heliotropos</p>
                             <p>Fondo: Almizcle y Vainilla</p>
@@ -1857,14 +1860,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\importados\femeninos\ROMANCE DE PARIS.webp" alt="imagen">
+                        <img src="img\perfumes\importados\femeninos\ROMANCE DE PARIS.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>ROMANCE DE PARIS<br><span>100</span></h1>
+                            <h2>ROMANCE DE PARIS<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Principal: Té, bergamota y Pera</p>
                             <p>Corazón: Jazmín y Azahar</p>
                             <p>Fondo: Almizcle blanco y Sándalo</p>
@@ -1874,14 +1877,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\importados\femeninos\ROMANCE DE PARIS NIGHT.webp" alt="imagen">
+                        <img src="img\perfumes\importados\femeninos\ROMANCE DE PARIS NIGHT.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>ROMANCE DE PARIS NIGHT<br><span>100</span></h1>
+                            <h2>ROMANCE DE PARIS NIGHT<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Principal: Cereza, Bergamota y Pera</p>
                             <p>Corazón: Hojas de té, Azahar, Jazmín y Violeta</p>
                             <p>Fondo: Almizcles y maderas preciosas</p>
@@ -1891,14 +1894,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\importados\femeninos\PARISMANIA.webp" alt="imagen">
+                        <img src="img\perfumes\importados\femeninos\PARISMANIA.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>PARISMANIA<br><span>100</span></h1>
+                            <h2>PARISMANIA<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Principal: Fresas, Bayas Rojas y Pomelo</p>
                             <p>Corazón: Hibiscus, Flor de cacao y Piña</p>
                             <p>Fondo: Ámbar, Almizcle y Sándalo</p>
@@ -1908,14 +1911,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\importados\femeninos\BUENA.webp" alt="imagen">
+                        <img src="img\perfumes\importados\femeninos\BUENA.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>BUENA<br><span>100</span></h1>
+                            <h2>BUENA<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Principal: Mora y Arándano</p>
                             <p>Corazón: Rosa de Damasco y Violeta</p>
                             <p>Fondo: Vetiver, Patchouli y Sándalo</p>
@@ -1925,14 +1928,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\importados\femeninos\SECRET DREAM.webp" alt="imagen">
+                        <img src="img\perfumes\importados\femeninos\SECRET DREAM.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>SECRET DREAM<br><span>100</span></h1>
+                            <h2>SECRET DREAM<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Principal: Jazmín y Naranja</p>
                             <p>Corazón: Rosa</p>
                             <p>Fondo: Patchouli, Almizcle y Vainilla</p>
@@ -1942,14 +1945,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\importados\femeninos\LUMIERE DE PARIS.webp" alt="imagen">
+                        <img src="img\perfumes\importados\femeninos\LUMIERE DE PARIS.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>LUMIERE DE PARIS<br><span>100</span></h1>
+                            <h2>LUMIERE DE PARIS<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Principal: Mandarina y Peonia</p>
                             <p>Corazón: Rosa Absoluta</p>
                             <p>Fondo: Ámbar y Almizcle Blanco</p>
@@ -1959,14 +1962,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\importados\femeninos\SUBLIME RED.webp" alt="imagen">
+                        <img src="img\perfumes\importados\femeninos\SUBLIME RED.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>SUBLIME RED<br><span>100</span></h1>
+                            <h2>SUBLIME RED<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Principal: Bergamota y Pomelo</p>
                             <p>Corazón: Peonia, Rosa y Canela</p>
                             <p>Fondo: Sándalo, Cedro y Caoba</p>
@@ -1976,14 +1979,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\importados\femeninos\SUBLIME GOLD.webp" alt="imagen">
+                        <img src="img\perfumes\importados\femeninos\SUBLIME GOLD.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>SUBLIME GOLD<br><span>100</span></h1>
+                            <h2>SUBLIME GOLD<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Principal: Limón, Frambuesa y Melocotón</p>
                             <p>Corazón: Gardenia, Jazmin y Azahar</p>
                             <p>Fondo: Miel, Cumarú y nota de Praliné</p>
@@ -1991,20 +1994,20 @@
                     </div>
                 </article>
             </section>
+            <h2 id="import-men">Importados masculinos</h2> <!-- ------------------ --><!-- ------------------ -->
             <section class="content__articles-cards">
 
-                <h2 id="import-men">Importados masculinos</h2> <!-- ------------------ --><!-- ------------------ -->
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\importados\masculinos\INTER ACTIF - FOR MEN.webp" alt="imagen">
+                        <img src="img\perfumes\importados\masculinos\INTER ACTIF - FOR MEN.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>INTER ACTIF - FOR MEN<br><span>100</span></h1>
+                            <h2>INTER ACTIF - FOR MEN<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Principal:Mandarina y Menta</p>
                             <p>Corazón: Romero y Lavanda</p>
                             <p>Fondo: Ámbar y madera de Gaïac</p>
@@ -2014,14 +2017,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\importados\masculinos\MONARQUE - FOR MEN.webp" alt="imagen">
+                        <img src="img\perfumes\importados\masculinos\MONARQUE - FOR MEN.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>MONARQUE - FOR MEN<br><span>100</span></h1>
+                            <h2>MONARQUE - FOR MEN<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Principal: Pomelo, Mandarina y Bambú</p>
                             <p>Corazón: Jengibre y Nuez Moscada</p>
                             <p>Fondo: Ámbar y madera de Gaïac</p>
@@ -2031,14 +2034,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\importados\masculinos\MONARQUE SPORT - FOR MEN.webp" alt="imagen">
+                        <img src="img\perfumes\importados\masculinos\MONARQUE SPORT - FOR MEN.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>MONARQUE SPORT - FOR MEN<br><span>100</span></h1>
+                            <h2>MONARQUE SPORT - FOR MEN<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Principal: Mandarina, Frambuesa y Chocolate</p>
                             <p>Corazón: Rosa, Flor de naranja y Nardo</p>
                             <p>Fondo: Café, Vainilla y Almizcle</p>
@@ -2048,14 +2051,14 @@
 
                 <article class="article">
                     <div class="article__img">
-                        <img loading="lazy" src="img\perfumes\importados\masculinos\CLOSE TO ME - FOR MEN.webp" alt="imagen">
+                        <img src="img\perfumes\importados\masculinos\CLOSE TO ME - FOR MEN.webp" alt="imagen">
                     </div>
                     <div class="article__aside">
                         <header class="aside__header">
-                            <h1>CLOSE TO ME - FOR MEN<br><span>100</span></h1>
+                            <h2>CLOSE TO ME - FOR MEN<br><span> 100</span></h2>
                         </header>
                         <main class="aside__main">
-                            <p class="subtittle">Notas aromáticas:</p>
+                            <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Principal: Rosa, Manzana y Menta</p>
                             <p>Corazón: Canela y Nuez moscada</p>
                             <p>Fondo: Cumarú y Cedro</p>
@@ -2064,34 +2067,7 @@
                 </article>
             </section>
         </div>
-
-    <!-- Comentarios -->
-    
-        <!-- <div id="graphcomment">
-            <script type="text/javascript">
-
-                /* - - - CONFIGURATION VARIABLES - - - */
-
-                // make sure the id is yours
-                window.gc_params = {
-                    graphcomment_id: 'testing-web',
-
-                    // if your website has a fixed header, indicate it's height in pixels
-                    fixed_header_height: 0,
-                };
-
-                /* - - - DON'T EDIT BELOW THIS LINE - - - */
-
-
-                (function () {
-                    var gc = document.createElement('script'); gc.type = 'text/javascript'; gc.async = true;
-                    gc.src = 'https://graphcomment.com/js/integration.js?' + Math.round(Math.random() * 1e8);
-                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(gc);
-                })();
-
-            </script>
-        </div>
-    </main> -->
+    </main>
 
     <div id="graphcomment"></div>
 <script type="text/javascript">
@@ -2099,21 +2075,20 @@
   /* - - - CONFIGURATION VARIABLES - - - */
 
   // make sure the id is yours
-  window.gc_params = {
+    window.gc_params = {
     graphcomment_id: 'test-web',
 
     // if your website has a fixed header, indicate it's height in pixels
     fixed_header_height: 0,
-  };
+    };
 
   /* - - - DON'T EDIT BELOW THIS LINE - - - */
 
-  
-  (function() {
-    var gc = document.createElement('script'); gc.type = 'text/javascript'; gc.async = true;
-    gc.src = 'https://graphcomment.com/js/integration.js?' + Math.round(Math.random() * 1e8);
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(gc);
-  })();
+    (function() {
+        var gc = document.createElement('script'); gc.type = 'text/javascript'; gc.async = true;
+        gc.src = 'https://graphcomment.com/js/integration.js?' + Math.round(Math.random() * 1e8);
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(gc);
+    })();
 
 </script>
 
@@ -2121,8 +2096,17 @@
     
         <footer class="footer">
             <p>
+                Página web creada y diseñada por:
+                <br> Agustin A. Aubete Cristiani
+            </p>
+            <p>
+                Para trabajos personales enviar Mail a: <br>
+                 <span>agustin.aube@gmail.com</span>
+            </p>
+            <p>
             Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
             </p>
         </footer>
+        <script type="module" src="./scripts/main.js"></script>
 </body>
 </html>
