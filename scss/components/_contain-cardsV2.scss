@@ -35,23 +35,23 @@
   @media (min-width: 1000px) {
     // width: 30%;
   }
-  // &:target {
-  //   position: relative;
-  //   padding-top: 50px;
-  //   background-color: transparent;
-  //   animation-name: articleSelected;
-  //   animation-duration: 1.2s;
-  //   animation-iteration-count: infinite;
-  //   animation-timing-function: ease-in-out;
-  // }
+  &:target {
+    position: relative;
+    padding-top: 50px;
+    background-color: transparent;
+    animation-name: articleSelected;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
 }
 @keyframes articleSelected {
   0%,
   100% {
-    transform: scale(1)
+    transform: translateY(-5px)
   }
   50%{
-    transform: scale(1.02)
+    transform: translateY(5px)
   }
 }
 .article__img {
