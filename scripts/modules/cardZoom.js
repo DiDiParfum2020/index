@@ -1,9 +1,16 @@
 const cards = document.querySelectorAll(".article")
-// console.log( "Total article cards:" ,cards.length);
+// console.log( "Total article cards:", cards.length);
 
 cards.forEach(el => {
-  el.addEventListener("click", () => {
-    const clon = el.cloneNode(true)
+  const image = el.querySelector(".article__img");
+  const zoomBtn = document.createElement("button");
+  zoomBtn.classList.add("zoomBtn")
+  zoomBtn.innerHTML = "🔍";
+  
+  image.appendChild(zoomBtn)
+  
+  zoomBtn.addEventListener("click", () => {
+    const clon = image.cloneNode(true)
     // clon.classList = ""
     clon.classList.add("cardZoom")
 

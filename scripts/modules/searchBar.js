@@ -17,6 +17,12 @@ itemsAvailableToSearch.forEach( el => {
   
   const img = el.querySelector(".article__img")
   obj.imgProduct = img.cloneNode(true)
+  // ---------------------------------------------------------
+
+  obj.top = el.offsetTop;
+  obj.element = el
+  
+  // ---------------------------------------------------------
   itemsResume.push(obj)
 })
 
@@ -31,13 +37,15 @@ function toggleResultsView() {
 // DATA
 let barInputValue = "";
 
+let elementSelectedBySearBar = "";
+
 function barInputBehavior ({target}) {
   barInputValue = target.value.toLowerCase()
   searchBarResults.innerHTML =""
   
   for(let i = 0; i < itemsResume.length; i++) {
     if( itemsResume[i].tittle.indexOf(barInputValue) !== -1 && barInput.value !== "") {
-      const wrapper = document.createElement("a")
+      const wrapper = document.createElement("div")
       wrapper.classList.add("wrapperItem")
       itemsResume[i].imgProduct.classList.remove("article__img")
       itemsResume[i].imgProduct.classList.add("itemWrapped")
@@ -47,6 +55,19 @@ function barInputBehavior ({target}) {
       wrapper.href = "#" + itemsResume[i].tittle
       wrapperTittle.innerHTML = itemsResume[i].tittle
       wrapper.appendChild(wrapperTittle)
+
+      // ---------------------------------------------------------
+
+      wrapper.addEventListener("click", () =>{
+        console.log(itemsResume[i].top);
+        itemsResume[i].element.style.border = "2px solid #f00"
+        setTimeout(() => {
+          elementSelectedBySearBar = itemsResume[i].element;
+        }, 500);
+        window.scrollTo(0, itemsResume[i].top -30);
+      });
+      
+      // ---------------------------------------------------------
       searchBarResults.appendChild(wrapper)
     } 
   }
@@ -90,7 +111,12 @@ temp()
 
 window.addEventListener("resize", temp)
 
-
+window.addEventListener("click", () => {
+  if(elementSelectedBySearBar) {
+    elementSelectedBySearBar.style.border = "none";
+    elementSelectedBySearBar = "";
+  }
+})
 
 // window.addEventListener("click", () => {
 //   itemsAvailableToSearch.forEach( el => {

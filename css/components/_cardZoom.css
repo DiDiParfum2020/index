@@ -1,0 +1,96 @@
+.containerCardZoom {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 70;
+  background-color: #000c; }
+
+.cardZoom {
+  background-color: transparent;
+  font-size: 16px;
+  position: fixed;
+  z-index: 75;
+  top: 20px;
+  left: 0;
+  right: 0;
+  width: 90vw;
+  max-height: 700px;
+  height: 85vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: auto;
+  cursor: auto; }
+  @media (min-width: 600px) {
+    .cardZoom {
+      font-size: 16px; } }
+  .cardZoom img {
+    -o-object-fit: contain;
+    object-fit: contain;
+    -o-object-position: top;
+    object-position: top;
+    width: 100;
+    height: 80%;
+    margin-bottom: 10px; }
+  .cardZoom .article__img {
+    padding: 20px;
+    margin: 0;
+    margin: auto;
+    width: 50%;
+    min-height: 30%; }
+  .cardZoom .article__img,
+  .cardZoom .article__aside {
+    display: block; }
+    .cardZoom .article__img h2,
+    .cardZoom .article__aside h2 {
+      margin-bottom: 50px; }
+    .cardZoom .article__img h3,
+    .cardZoom .article__aside h3 {
+      font-size: 1em;
+      font-weight: lighter;
+      margin-bottom: 15px; }
+    .cardZoom .article__img p,
+    .cardZoom .article__aside p {
+      font-weight: bolder;
+      font-size: 1.2em;
+      width: 100%; }
+  .cardZoom .article__aside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-line-pack: distribute;
+    align-content: space-around;
+    height: auto;
+    margin: auto;
+    padding: 20px; }
+  .cardZoom .closeClon {
+    font-family: sans-serif;
+    background-color: red;
+    border-radius: 2px;
+    padding: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    z-index: 80;
+    width: 200px; }

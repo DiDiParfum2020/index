@@ -81,7 +81,9 @@
         display: flex;
         justify-content: center;
         hr {
-            border: 1px solid #fff;
+            width: 2px;
+            background-color: #fff;
+            border: none;
         }
         li {
             width: auto;
@@ -185,6 +187,9 @@
     display: flex;
     align-items: center;
     padding: 5px;
+    .zoomBtn {
+        display: none;
+      }
     p {
         color: #000;
     }
