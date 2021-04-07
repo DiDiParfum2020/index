@@ -32,7 +32,7 @@
     }
 }
 .header__nav {
-    font-family: sans-serif;
+    font-family: GosmickSans;
     position: absolute;
     z-index: 70;
     max-width: 300px;
@@ -89,7 +89,6 @@
             width: auto;
         }
         .nav__links {
-            font-family: sans-serif;
             height: 40px;
             padding: 5px 5px;
             font-size: 1rem;
