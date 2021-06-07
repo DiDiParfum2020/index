@@ -37,11 +37,11 @@ function toggleResultsView() {
 // DATA
 let barInputValue = "";
 
-let elementSelectedBySearBar = "";
+let elementSelectedBySearchBar = "";
 
 function barInputBehavior ({target}) {
   barInputValue = target.value.toLowerCase()
-  searchBarResults.innerHTML =""
+  searchBarResults.innerHTML = "";
   
   for(let i = 0; i < itemsResume.length; i++) {
     if( itemsResume[i].tittle.indexOf(barInputValue) !== -1 && barInput.value !== "") {
@@ -59,12 +59,18 @@ function barInputBehavior ({target}) {
       // ---------------------------------------------------------
 
       wrapper.addEventListener("click", () =>{
-        console.log(itemsResume[i].top);
+        console.log("Article ScrollTop:", itemsResume[i].top);
         itemsResume[i].element.style.border = "2px solid #f00"
         setTimeout(() => {
-          elementSelectedBySearBar = itemsResume[i].element;
+          elementSelectedBySearchBar = itemsResume[i].element;
         }, 500);
-        window.scrollTo(0, itemsResume[i].top -30);
+        const scrollToArticle = itemsResume[i].top - 50;
+        console.log("Y to ScrollY:", scrollToArticle);
+        window.scrollTo(0, scrollToArticle);
+        console.log("Window scrollY after scroll to Article:", window.scrollY);
+        console.log(
+          "%c----------------------------", "color: lime;"
+        )
       });
       
       // ---------------------------------------------------------
@@ -112,9 +118,9 @@ temp()
 window.addEventListener("resize", temp)
 
 window.addEventListener("click", () => {
-  if(elementSelectedBySearBar) {
-    elementSelectedBySearBar.style.border = "none";
-    elementSelectedBySearBar = "";
+  if(elementSelectedBySearchBar) {
+    elementSelectedBySearchBar.style.border = "none";
+    elementSelectedBySearchBar = "";
   }
 })
 
