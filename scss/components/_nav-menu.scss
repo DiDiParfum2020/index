@@ -51,10 +51,18 @@
 .nav__li {
     padding-left: 10px;
     font-size: 1.4rem;
+    & > p {
+        color: #fff;
+        $textBorder-color: #000;
+        text-shadow: 2px 0 0 $textBorder-color, -2px 0 0 $textBorder-color, 0 2px 0 $textBorder-color, 0 -2px 0 $textBorder-color, 1px 1px $textBorder-color, -1px -1px 0 $textBorder-color, 1px -1px 0 $textBorder-color, -1px 1px 0 $textBorder-color;
+    }
     li {
         padding-left: 20px;
     }
     @media (min-width: 600px) {
+        & > p {
+            text-shadow: none;
+        }
         li {
             padding-left: 0;
         }
@@ -70,9 +78,7 @@
     cursor: pointer;
     line-height: 30px;
     position: relative;
-    // > ul {
-    //     display: none;
-    // }
+
     &:hover {
         background-color: #000a;
         & > ul {
