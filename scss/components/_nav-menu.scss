@@ -233,11 +233,19 @@
     display: flex;
     align-items: center;
     padding: 5px;
+    border-bottom: 1px solid #ccc;
+    &:last-child {
+        border: none;
+    }
     .zoomBtn {
         display: none;
     }
     p {
+        display: inline-block;
+        text-align: center;
         color: #000;
+        margin-left: auto;
+        margin-right: auto;
     }
     .itemWrapped {
         width: 30%;
@@ -248,7 +256,6 @@
         background-color: #222;
         p {
             color: #fff;
-
         }
     }
 }

@@ -5,25 +5,30 @@ const itemsResume = []
 const searchBarResults = document.getElementById("searchBarResults")
 const barInput = document.getElementById("searchInput")
 
+barInput.style.display = "none";
+
 // SELECTION of ITEMS AVAILABLES TO SEARCH
-itemsAvailableToSearch.forEach( el => {
-  // el.addEventListener("target", () => console.log(el))
+addEventListener('load', () => {
   
-  const obj = {}
-
-  const tittle = el.querySelector("h2").textContent.toLowerCase()
-  obj.tittle = tittle;
-  el.id = tittle
+  itemsAvailableToSearch.forEach( el => {
+    const obj = {}
+    
+    const tittle = el.querySelector("h2").textContent.toLowerCase()
+    obj.tittle = tittle;
+    el.id = tittle
+    
+    const img = el.querySelector(".article__img")
+    obj.imgProduct = img.cloneNode(true)
+    // ---------------------------------------------------------
+    
+    obj.top = el.offsetTop;
+    obj.element = el
+    
+    // ---------------------------------------------------------
+    itemsResume.push(obj)
+  })
   
-  const img = el.querySelector(".article__img")
-  obj.imgProduct = img.cloneNode(true)
-  // ---------------------------------------------------------
-
-  obj.top = el.offsetTop;
-  obj.element = el
-  
-  // ---------------------------------------------------------
-  itemsResume.push(obj)
+  barInput.style.display = "inline-block";
 })
 
 // FUNCTIONS remade CLASSES
@@ -36,47 +41,51 @@ function toggleResultsView() {
 
 // DATA
 let barInputValue = "";
-
-let elementSelectedBySearchBar = "";
+let elementSelectedBySearchBar = null;
 
 function barInputBehavior ({target}) {
   barInputValue = target.value.toLowerCase()
+  
+  // ! eliminar elementos creados en memoria por cada busqueda
   searchBarResults.innerHTML = "";
   
   for(let i = 0; i < itemsResume.length; i++) {
     if( itemsResume[i].tittle.indexOf(barInputValue) !== -1 && barInput.value !== "") {
       const wrapper = document.createElement("div")
+      wrapper.id = "searchBar__Wrapper"
       wrapper.classList.add("wrapperItem")
       itemsResume[i].imgProduct.classList.remove("article__img")
       itemsResume[i].imgProduct.classList.add("itemWrapped")
       wrapper.appendChild(itemsResume[i].imgProduct)
       
       const wrapperTittle = document.createElement("p") 
-      wrapper.href = "#" + itemsResume[i].tittle
-      wrapperTittle.innerHTML = itemsResume[i].tittle
+      wrapper.setAttribute('href', `#${itemsResume[i].title}` )
+      wrapperTittle.textContent = itemsResume[i].tittle
       wrapper.appendChild(wrapperTittle)
 
       // ---------------------------------------------------------
 
-      wrapper.addEventListener("click", () =>{
-        console.log("Article ScrollTop:", itemsResume[i].top);
-        itemsResume[i].element.style.border = "2px solid #f00"
+      wrapper.addEventListener("click", ({target}) =>{
+        // console.log("Article ScrollTop:", itemsResume[i].top);
+        console.log(target)
         setTimeout(() => {
+          itemsResume[i].element.style.border = "2px solid #f00"
           elementSelectedBySearchBar = itemsResume[i].element;
         }, 500);
         const scrollToArticle = itemsResume[i].top - 50;
-        console.log("Y to ScrollY:", scrollToArticle);
+        // console.log("Y to ScrollY:", scrollToArticle);
         window.scrollTo(0, scrollToArticle);
-        console.log("Window scrollY after scroll to Article:", window.scrollY);
-        console.log(
-          "%c----------------------------", "color: lime;"
-        )
+        // console.log("Window scrollY after scroll to Article:", window.scrollY);
+        // console.log(
+        //   "%c----------------------------", "color: lime;"
+        // )
       });
       
       // ---------------------------------------------------------
       searchBarResults.appendChild(wrapper)
     } 
   }
+
   if(searchBarResults.innerHTML === "") {
     const warningNoResults = document.createElement("p")
     warningNoResults.classList.add("resulstWarning")
@@ -87,12 +96,13 @@ function barInputBehavior ({target}) {
   } else if( barInput === "") {
     searchBarResults.innerHTML =""
   }
+
 }
 
 
 // BAR INPUT EVENT LISTENERS
-barInput.addEventListener("focusin", toggleResultsView)
-barInput.addEventListener("focusout", () => {
+barInput.addEventListener("focus", toggleResultsView)
+barInput.addEventListener("blur", () => {
   setTimeout(() => {toggleResultsView()}, 100)
 });
 barInput.addEventListener("keyup", barInputBehavior)
@@ -116,16 +126,17 @@ function temp() {
 temp()
 
 window.addEventListener("resize", temp)
+// addEventListener('click', ({target}) => console.log(target))
 
-window.addEventListener("click", () => {
-  if(elementSelectedBySearchBar) {
+document.addEventListener("click", ({target}) => {
+  // console.log(searchBarResults.childNodes)
+  // searchBarResults.childNodes.forEach( el => searchBarResults.removeChild(el))
+
+  // console.log("1 -", elementSelectedBySearchBar)
+  
+  if( elementSelectedBySearchBar !== null ) {
     elementSelectedBySearchBar.style.border = "none";
-    elementSelectedBySearchBar = "";
+    elementSelectedBySearchBar = null;
   }
-})
 
-// window.addEventListener("click", () => {
-//   itemsAvailableToSearch.forEach( el => {
-//     // el.style.animationName = ""
-//   })
-// })
+})
