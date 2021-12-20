@@ -67,7 +67,6 @@ function barInputBehavior ({target}) {
 
       wrapper.addEventListener("click", ({target}) =>{
         // console.log("Article ScrollTop:", itemsResume[i].top);
-        console.log(target)
         setTimeout(() => {
           itemsResume[i].element.style.border = "2px solid #f00"
           elementSelectedBySearchBar = itemsResume[i].element;
