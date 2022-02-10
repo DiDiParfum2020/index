@@ -506,33 +506,43 @@ a:visited {
   user-select: none;
 }
 
-.aside__header span:after {
+.aside__header {
+  margin-bottom: 20px;
+}
+
+.aside__header .header__volume {
   text-transform: lowercase;
-  font-family: sans-serif;
-  content: " ml";
 }
 
 .article__aside {
   width: 50%;
-  display: block;
+  display: flex;
+  flex-direction: column;
   padding: 10px;
 }
 
-.article__aside h2 {
-  margin-bottom: 20px;
+@media (max-width: 600px) {
+  .article__aside h2 {
+    font-size: 1rem;
+  }
 }
 
 .article__aside h3 {
   margin-bottom: 10px;
 }
 
-.article__aside .discontinuedTitle {
+.article__aside .aside__price {
+  font-size: 16px;
+  text-align: center;
+  margin-top: auto;
+}
+
+.article__aside .highlightedParraph {
   font-family: sans-serif;
   color: #f00;
   text-transform: uppercase;
   font-weight: bolder;
   font-size: 1.2em;
-  margin-bottom: 10px;
 }
 
 .article__aside p {
