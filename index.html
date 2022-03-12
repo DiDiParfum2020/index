@@ -1736,7 +1736,7 @@
                             <h3 class="subtittle">Notas aromáticas:</h3>
                             <p>Dulce, Especiado Suave, Caramelo, Vainilla</p>
                         </main>
-                        <p class="aside__price">$2.000</p>
+                        <p class="aside__price">$2.200</p>
                     </div>
                 </article>
 
@@ -2719,6 +2719,38 @@
 
 </script>
 
+
+<!-- <script>
+    const domSections = document.querySelectorAll('.content__articles-cards')
+    const sections = [...domSections].map( section => section.children)
+    const articles = sections.map( articles => [...articles].map( article => {
+        const title = article.querySelector('h2')
+        const name = title.childNodes[0].data.trim().toLowerCase()
+        const volume = title.querySelector('span').childNodes[0].data.trim()
+        const volumeMagnitude = title.textContent.match(/(ml)|(cc)/ig).join('')
+        const price = article.querySelector('.aside__price')?.textContent
+        const obj = {
+            name: name,
+            notas: article.querySelector('.aside__main p').textContent,
+            vl: Number(volume),
+            vlMagnitude: volumeMagnitude,
+            price: price
+        }
+
+        return obj
+    }))
+    const dataOfEachArticle = articles.map( articles => {
+
+    })
+    console.log(JSON.stringify(articles))
+    // console.log(articles)
+
+    // const result = articles.every( sectionArticles => {
+    //     return sectionArticles.every( article => typeof article.vl === 'number')
+    // })
+    // console.log(result)
+    
+</script> -->
 <!-- Footer -->
     
         <footer class="footer">
