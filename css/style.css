@@ -538,6 +538,7 @@ a:visited {
 }
 
 .article__aside .highlightedParraph {
+  margin-top: auto;
   font-family: sans-serif;
   color: #f00;
   text-transform: uppercase;

@@ -68,7 +68,7 @@ function barInputBehavior ({target}) {
       wrapper.addEventListener("click", ({target}) =>{
         // console.log("Article ScrollTop:", itemsResume[i].top);
         setTimeout(() => {
-          itemsResume[i].element.style.border = "2px solid #f00"
+          itemsResume[i].element.style.outline = "2px solid #f00"
           elementSelectedBySearchBar = itemsResume[i].element;
         }, 500);
         const scrollToArticle = itemsResume[i].top - 50;
@@ -134,7 +134,7 @@ document.addEventListener("click", ({target}) => {
   // console.log("1 -", elementSelectedBySearchBar)
   
   if( elementSelectedBySearchBar !== null ) {
-    elementSelectedBySearchBar.style.border = "none";
+    elementSelectedBySearchBar.style.outline = "none";
     elementSelectedBySearchBar = null;
   }
 
