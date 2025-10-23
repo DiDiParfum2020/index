@@ -20,14 +20,15 @@ navOpenBtn.addEventListener("click", navBtnsBehavior);
 navCloseBtn.addEventListener("click", navBtnsBehavior);
 bgNavOpen.addEventListener("click", navBtnsBehavior);
 
+const thresholdInPx = 900
 
 function navView() {
   const windowWidth = window.innerWidth
-  if(windowWidth >= 600) {
+  if(windowWidth >= thresholdInPx) {
     links.forEach(el => el.removeEventListener("click", navBtnsBehavior))
     nav.classList = ""
     nav.classList.add("navNoMobile")
-  } else if ( windowWidth < 600) {
+  } else if ( windowWidth < thresholdInPx) {
     links.forEach(el => el.addEventListener("click", navBtnsBehavior))
     nav.classList = "header__nav"
     bgNavOpen.classList.remove("bgNavOpen")
