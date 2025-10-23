@@ -93,7 +93,7 @@ a:visited {
   color: #000;
 }
 
-@media (min-width: 950px) {
+@media (min-width: 900px) {
   .navBtns {
     display: none;
   }
