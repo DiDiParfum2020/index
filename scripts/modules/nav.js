@@ -20,7 +20,7 @@ navOpenBtn.addEventListener("click", navBtnsBehavior);
 navCloseBtn.addEventListener("click", navBtnsBehavior);
 bgNavOpen.addEventListener("click", navBtnsBehavior);
 
-const thresholdInPx = 900
+const thresholdInPx = 950
 
 function navView() {
   const windowWidth = window.innerWidth
