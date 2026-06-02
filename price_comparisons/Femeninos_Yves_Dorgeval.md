@@ -2,7 +2,7 @@
 
 **Fecha de Actualización:** 2 de Junio de 2026  
 **Cambio de Commit:** b1f7c44 → b2b2b5a  
-**Descripción:** Se agregó un nuevo producto y se actualizó el precio de todos los productos
+**Descripción:** Se actualizó el precio de todos los productos
 
 ---
 
@@ -12,7 +12,6 @@
 |---------|-------|
 | **Total de Productos** | 52 |
 | **Aumento Uniforme** | +$3.000 |
-| **Productos Nuevos** | 1 (MISS MILLIONAIRE GOLD) |
 | **% Promedio de Aumento** | ~8.3% |
 | **Rango de Precios** | $14K - $46K |
 
