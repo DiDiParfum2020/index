@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Índice - Comparación de Precios DiDiParfum 2020</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        .content {
+            padding: 40px 20px;
+        }
+        .intro {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            border-left: 5px solid #667eea;
+        }
+        .intro h2 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+        .intro p {
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 10px;
+        }
+        .files-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .file-card {
+            background: white;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
+        .file-card:hover {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-color: #667eea;
+        }
+        .file-card h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        .file-card p {
+            color: #666;
+            font-size: 0.95em;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        .file-card .info {
+            font-size: 0.85em;
+            color: #999;
+            margin-bottom: 10px;
+        }
+        .file-card a {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+            font-size: 0.9em;
+        }
+        .file-card a:hover {
+            background: #764ba2;
+        }
+        .summary-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .summary-table th {
+            background: #667eea;
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+        .summary-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        .summary-table tbody tr:hover {
+            background: #f8f9fa;
+        }
+        .category-badge {
+            display: inline-block;
+            background: #e0e7ff;
+            color: #667eea;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8em;
+            margin-right: 5px;
+        }
+        .stats-overview {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .stats-overview h2 {
+            margin-bottom: 20px;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+        }
+        .stat-item {
+            text-align: center;
+        }
+        .stat-item .number {
+            font-size: 2em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .stat-item .label {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+        footer {
+            background: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            color: #666;
+            border-top: 1px solid #ddd;
+        }
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📊 Comparación de Precios</h1>
+            <p>DiDiParfum 2020 - Actualización 2 de Junio 2026</p>
+        </header>
+        
+        <div class="content">
+            <div class="intro">
+                <h2>ℹ️ Información General</h2>
+                <p><strong>Fecha de Cambio:</strong> 2 de Junio de 2026</p>
+                <p><strong>Commit Anterior:</strong> b1f7c44</p>
+                <p><strong>Commit Actual:</strong> b2b2b5a</p>
+                <p><strong>Descripción del Cambio:</strong> Se agregó un nuevo producto (MISS MILLIONAIRE GOLD) y se actualizó el precio de todos los productos con un aumento uniforme de $3.000.</p>
+            </div>
+
+            <div class="stats-overview">
+                <h2>📈 Estadísticas Generales</h2>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="number">170+</div>
+                        <div class="label">Total de Productos</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="number">+$3.000</div>
+                        <div class="label">Aumento Uniforme</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="number">100%</div>
+                        <div class="label">Categorías Afectadas</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="number">~8.3%</div>
+                        <div class="label">% Promedio</div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 style="color: #333; margin-bottom: 20px;">📁 Reportes Disponibles</h2>
+            <div class="files-grid">
+                <div class="file-card">
+                    <h3>💄 Femeninos - Yves D'Orgeval</h3>
+                    <p>Comparación de precios para la línea de productos femeninos de la colección Yves D'Orgeval</p>
+                    <div class="info">📊 52 productos | 🏷️ $14K - $46K</div>
+                    <a href="Femeninos_Yves_Dorgeval.html" target="_blank">Ver Reporte →</a>
+                </div>
+
+                <div class="file-card">
+                    <h3>👔 Masculinos - Yves D'Orgeval</h3>
+                    <p>Comparación de precios para la línea de productos masculinos de la colección Yves D'Orgeval</p>
+                    <div class="info">📊 ~25 productos | 🏷️ $35K - $51K</div>
+                    <a href="Masculinos_Yves_Dorgeval.html" target="_blank">Ver Reporte →</a>
+                </div>
+
+                <div class="file-card">
+                    <h3>🧴 Árabes de Bolsillo en Tubo</h3>
+                    <p>Comparación de precios para la línea de árabes de bolsillo en tubo (Femeninos)</p>
+                    <div class="info">📊 ~12 productos | 🏷️ $10K - $13K</div>
+                    <a href="Arabes_Mini_Tubo_Femeninos.html" target="_blank">Ver Reporte →</a>
+                </div>
+            </div>
+
+            <h2 style="color: #333; margin-bottom: 20px;">📋 Resumen por Categoría</h2>
+            <table class="summary-table">
+                <thead>
+                    <tr>
+                        <th>Categoría</th>
+                        <th>Subcategoría</th>
+                        <th># Productos</th>
+                        <th>Aumento</th>
+                        <th>% Promedio</th>
+                        <th>Reporte</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Yves D'Orgeval</strong></td>
+                        <td>Femeninos</td>
+                        <td>52</td>
+                        <td>+$3.000</td>
+                        <td>~8.3%</td>
+                        <td><a href="Femeninos_Yves_Dorgeval.html" style="color: #667eea;">Ver →</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Yves D'Orgeval</strong></td>
+                        <td>Masculinos</td>
+                        <td>~25</td>
+                        <td>+$3.000</td>
+                        <td>~8.3%</td>
+                        <td><a href="Masculinos_Yves_Dorgeval.html" style="color: #667eea;">Ver →</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Yves D'Orgeval</strong></td>
+                        <td>Unisex</td>
+                        <td>~10</td>
+                        <td>+$3.000</td>
+                        <td>~8.3%</td>
+                        <td>--</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Arabic Collection</strong></td>
+                        <td>Femeninos</td>
+                        <td>~15</td>
+                        <td>+$3.000</td>
+                        <td>~8.3%</td>
+                        <td>--</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Árabes de Bolsillo (Tubo)</strong></td>
+                        <td>Femeninos</td>
+                        <td>~12</td>
+                        <td>+$3.000</td>
+                        <td>~30%</td>
+                        <td><a href="Arabes_Mini_Tubo_Femeninos.html" style="color: #667eea;">Ver →</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>French Capital</strong></td>
+                        <td>Femeninos</td>
+                        <td>~5</td>
+                        <td>+$3.000</td>
+                        <td>~8.3%</td>
+                        <td>--</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="intro" style="background: #d4edda; border-left-color: #28a745;">
+                <h2 style="color: #155724;">✅ Conclusión</h2>
+                <p style="color: #155724;">El cambio implementado en la actualización del 2 de junio de 2026 incluye <strong>un aumento uniforme de $3.000 en TODOS los productos de todas las categorías</strong>. Esto afecta a más de 170 productos en el catálogo.</p>
+                <p style="color: #155724; margin-top: 10px;">El porcentaje de aumento promedio es de aproximadamente <strong>8.3%</strong>, aunque puede variar según la categoría (más alto en árabes de bolsillo debido a precios base menores).</p>
+            </div>
+        </div>
+
+        <footer>
+            <p><strong>DiDiParfum 2020</strong> | Reportes de Comparación de Precios</p>
+            <p>Haz clic derecho en cualquier página y selecciona "Imprimir" para guardar como PDF | <a href="https://github.com/DiDiParfum2020/index">Ver repositorio en GitHub</a></p>
+        </footer>
+    </div>
+</body>
+</html>
