@@ -335,6 +335,11 @@ a:visited {
 .landingIntro .infografia-ENVIOS img {
   width: 50%;
 }
+@media (min-width: 600px) {
+  .landingIntro .infografia-ENVIOS img {
+    width: 100%;
+  }
+}
 .landingIntro .main__intro {
   text-align: center;
   display: flex;
@@ -368,7 +373,7 @@ a:visited {
 }
 .landingIntro .banner {
   width: 100%;
-  height: 50vh;
+  height: 90vh;
   background-color: #000;
   display: flex;
   justify-content: center;
